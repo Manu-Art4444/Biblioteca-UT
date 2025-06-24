@@ -1,0 +1,467 @@
+.login_box{
+
+	background: #ecf0f1;
+}
+.bordeLogin{
+
+   border-color: #e67e22;
+   border-width: 12px;
+   border-style: solid;
+   margin-bottom: 5px; 
+}
+
+.sombra{
+	max-width: 400px;
+	-webkit-box-shadow:0px 0px 10px 0px rgba(40,50,50,0.48);
+	-moz-box-shadow:0px 0px 10px 0px rgba(40,50,50,0.48);
+	box-shadow:0px 0px 10px 0px rgba(40,50,50,0.48);
+	border-radius: 6%;
+}
+
+
+.alturaKnob{
+	border: 1px solid #dfe6e9;
+	padding: 7px;
+	min-height: 280px;
+}
+
+img.anima{
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+img.brinca{
+	margin-bottom: 15px;
+}
+ 
+img.anima:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5)
+}
+.avatar{
+	width: 33%;
+	margin:0px auto 10px;
+	display: block;
+	
+}
+
+.logo{
+	width: 50%;
+	/*margin:0px auto 10px;*/
+	display: block;
+	
+}
+
+.logox{
+	width: 50%;
+	margin:0px auto 10px;
+	display: block;
+	
+}
+
+
+.espacioIzq{
+	padding-left: 20px;
+}
+
+.login-logo{
+	border-color: #e67e22;
+}
+.login-logo:hover,
+.register-logo:hover {
+	 font-size: 50px;
+	 border-color: #3498db;
+	 border-top-width: 0px;
+	 border-left-width: 0px;
+	 border-right-width: 0px;
+	 border-bottom-width: 12px;
+	 border-style: solid; 
+     color: white;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mayuscula{
+	text-transform: uppercase;
+}
+
+
+
+a.black,a.black-active,a.blue,a.blue-active,a.pink,a.pink-active,a.green,a.green-active,a.purple,a.purple-active,a.red,a.red-active,a.yellow,a.yellow-active{ 
+	text-decoration: underline; 
+	background: white; 
+	text-decoration: none; 
+	padding: 1px 3px; 
+	color:#2c3e50;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	transition: all 1s ease;
+	border-radius: 2px 2px 2px 2px;
+	
+}
+
+a.black { 
+	color: #111111; 
+	 
+}
+
+a.black-active { 
+	color: #000000; 
+	 
+}
+
+a.blue { 
+	color: #0073b7; 
+	 
+}
+
+a.blue-active { 
+	color: #005384; 
+	 
+}
+
+a.pink { 
+	color: #f012be; 
+	 
+}
+
+a.pink-active { 
+	color: #db0ead; 
+	 
+}
+
+a.green-active { 
+	color: #008d4c; 
+	 
+}
+
+a.green { 
+	color: #00a65a; 
+	 
+}
+
+a.purple-active { 
+	color: #555299; 
+	 
+}
+
+a.purple { 
+	color: #605ca8; 
+	 
+}
+
+a.red-active { 
+	color: #d33724; 
+	 
+}
+
+a.red { 
+	color: #dd4b39; 
+	 
+}
+
+a.yellow-active { 
+	color: #db8b0b; 
+	 
+}
+
+a.yellow { 
+	color: #f39c12; 
+	 
+}
+
+
+
+a.black:hover { 
+	background: #111111; 
+	color: white; 
+}
+
+a.black-active:hover { 
+	background: #000000; 
+	color: white; 
+}
+
+a.blue:hover { 
+	background: #0073b7; 
+	color: white; 
+}
+
+a.blue-active:hover { 
+	background: #005384; 
+	color: white; 
+}
+
+a.pink:hover { 
+	background: #f012be; 
+	color: white; 
+}
+
+a.pink-active:hover { 
+	background: #db0ead; 
+	color: white; 
+}
+
+a.green-active:hover { 
+	background: #008d4c; 
+	color: white; 
+}
+
+a.green:hover { 
+	background: #00a65a; 
+	color: white; 
+}
+
+a.purple-active:hover { 
+	background: #555299; 
+	color: white; 
+}
+
+a.purple:hover { 
+	background: #605ca8; 
+	color: white; 
+}
+
+a.red-active:hover { 
+	background: #d33724; 
+	color: white; 
+}
+
+a.red:hover { 
+	background: #dd4b39; 
+	color: white; 
+}
+
+a.yellow-active:hover { 
+	background: #db8b0b; 
+	color: white; 
+}
+
+a.yellow:hover { 
+	background: #f39c12; 
+	color: white; 
+}
+
+a.zoom{
+	color: #34495e; 
+	transition: all 1s ease;
+}
+
+a.zoom:hover { 
+	font-size: 20px;
+}
+
+b.cambia:before { 
+content:"SGAP"; 
+font-size:25px; 
+
+transition: all 1s ease;
+} 
+
+b.cambia:hover:before { 
+content:"Sistema Gestor de Procesos Academicos"; 
+font-size:20px; 
+}
+
+.centrar{
+	text-align: center;
+	font-size: 17px;
+}
+
+.inactivo{
+	color:#d35400;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.activo{
+	font-weight: bold;
+	color: #2980b9;
+}
+
+.mayus{
+	text-transform: uppercase;
+}
+
+.estudiante{
+	color:#2980b9;
+}
+
+.inacEstudent{
+	color:rgba(41, 128, 185,.5);
+}
+
+.buscador{
+	max-width: 99%;
+}
+
+.botonbox {
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid #fff;
+    background: rgba(244, 244, 244, 0.3);
+    border-radius: 0;
+    color: #2c3e50;
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.botonbox:hover {
+    background: #fff;
+    color: #2c3e50;
+}
+
+.negrito{
+	font-weight: bold;
+}
+
+.centrar2{
+	text-align: center;
+}
+
+.cortar{
+    width:80%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.centrarx{
+	text-align: center;
+}
+
+/*modales*/
+.justificado{
+	text-align: justify;
+	font-size: 17px;
+}
+
+.derecha{
+	text-align: right;
+}
+
+.Izquierda{
+	text-align: left;
+}
+
+.foto{
+	width: 32px;
+	margin:0;
+	display: block;
+	border: solid 2px #ccc;
+	height: 32px;
+}
+
+.fotomodal{
+	width:65%;
+	margin:auto;
+	display: block;
+	max-width: 65%;
+
+}
+
+.botonCar{
+	margin-bottom: 15px;
+	width: 80%;
+	height: 30px;
+	max-height: 100px;
+	font-size: 13px;
+	border: solid 1px #fff;
+}
+
+.botonArreglo{
+	font-size: 24px;
+		margin-bottom: 15px;
+	    width: 80%;
+	    color:#fff;
+	    border: solid 2px #fff;
+	    font: verdana;
+	    font-weight: bold;
+}
+
+
+.botonArreglo:hover{
+		color:#fff;
+	    background:rgba(236, 240, 241,.3);
+}
+
+.botonArregloB{
+		font-size: 24px;
+		margin-bottom: 15px;
+	    width: 80%;
+	    color:#000;
+	    border: solid 2px #000;
+	    font: verdana;
+	    font-weight: bold;
+}
+
+.botonArregloB:hover{
+		color:#000;
+	    background:rgba(44, 62, 80,.5);
+	    border: solid 2px #000;
+}
+
+@media (max-width: 768px) {
+.botonArreglo,
+.botonArregloB {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+
+
+.marco{
+	margin-bottom: 10px;
+}
+
+.linkEtiqueta{
+	color: #000;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 50%;
+	padding: 8px;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+ 
+/*input[type=checkbox] + label:before {
+font-family: FontAwesome;
+display: inline-block;
+font-size: 19px;
+
+}
+input[type=checkbox].estilo{
+	display:none;
+}
+input[type=checkbox].estilo + label:before {
+content: "\f096";
+letter-spacing: 10px;
+}
+ 
+input[type=checkbox].estilo:checked + label:before {
+content: '\f046';
+}
+*/
+.espacio{
+	margin: 3px;
+	padding: 3px;
+
+}
+
+.espacio:hover{
+	color:#e74c3c;
+}
+
+.tamGrafica{
+	width: 50px;
+}

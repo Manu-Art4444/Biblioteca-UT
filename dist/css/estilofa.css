@@ -1,0 +1,76 @@
+.verde{
+
+	color                  : #27ae60;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#2ecc71, #27ae60);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;		
+	-webkit-transition     : all 1s ease;
+	-moz-transition        : all 1s ease;
+	-o-transition          : all 1s ease;
+	
+}
+
+.verde:hover{
+	color                  : #27ae60;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#27ae60, #2ecc71);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+
+
+.rojo{
+	color                  : #c0392b;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#e74c3c, #c0392b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;		
+	
+	-webkit-transition     : all 3s ease;
+	-moz-transition        : all 3s ease;
+	-o-transition          : all 3s ease;
+}
+
+.rojo:hover{
+
+	color                  : #c0392b;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#c0392b, #e74c3c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;		
+}
+
+.negro{	
+	color                  : #bdc3c7;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#ecf0f1, #bdc3c7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+
+	-webkit-transition     : all 1s ease;
+	-moz-transition        : all 1s ease;
+	-o-transition          : all 1s ease;
+}
+
+.negro:hover{
+
+	color                  : #bdc3c7;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#bdc3c7,#ecf0f1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gris{	
+	color                  : #2c3e50;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#ecf0f1, #2c3e50);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+
+	-webkit-transition     : all 1s ease;
+	-moz-transition        : all 1s ease;
+	-o-transition          : all 1s ease;
+}
+
+.gris:hover{
+
+	color                  : #2c3e50;  /* Fallback other browsers */
+	background             : -webkit-linear-gradient(#2c3e50,#ecf0f1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,215 @@
+/*Acordeon bootstrap*/
+
+.panel-default-pink {
+  border-color: #F781D8;
+}
+.panel-default-pink > .panel-heading {
+  color: #ecf0f1;
+  background-color: #F781D8;
+  border-color: #F781D8;
+}
+.panel-default-pink > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #F781D8;
+}
+.panel-default-pink > .panel-heading .badge {
+  color: #d35400;
+  background-color: #F781D8;
+  font-weight: bold;
+}
+.panel-default-pink > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #F781D8;
+}
+
+.panel-title > a{
+  Color:inherit;
+}
+
+.panel-title > a:hover{
+  Color:inherit;
+  font-weight: bold;
+}
+
+.panel-default-black {
+  border-color: #2c3b41;
+}
+.panel-default-black > .panel-heading {
+  color: #ecf0f1;
+  background-color: #2c3b41;
+  border-color: #2c3b41;
+}
+.panel-default-black > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #2c3b41;
+}
+.panel-default-black > .panel-heading .badge {
+  color: #d35400;
+  background-color: #2c3b41;
+  font-weight: bold;
+}
+.panel-default-black > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #2c3b41;
+}
+
+.panel-title > a{
+  Color:inherit;
+}
+
+.panel-title > a:hover{
+  Color:inherit;
+  font-weight: bold;
+}
+
+/*Acordeon bootstrap*/
+
+.panel-default-blue {
+  border-color: #2980b9;
+}
+.panel-default-blue > .panel-heading {
+  color: #ecf0f1;
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+.panel-default-blue > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-default-blue > .panel-heading .badge {
+  color: #d35400;
+  background-color: #2980b9;
+  font-weight: bold;
+}
+.panel-default-blue > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #2980b9;
+}
+
+.panel-title > a{
+  Color:inherit;
+}
+
+.panel-title > a:hover{
+  Color:inherit;
+  font-weight: bold;
+}
+
+/*Acordeon bootstrap*/
+
+.panel-default-green {
+  border-color: #27ae60;
+}
+.panel-default-green > .panel-heading {
+  color: #ecf0f1;
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+.panel-default-green > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #27ae60;
+}
+.panel-default-green > .panel-heading .badge {
+  color: #d35400;
+  background-color: #27ae60;
+  font-weight: bold;
+}
+.panel-default-green > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #27ae60;
+}
+
+.panel-title > a{
+  Color:inherit;
+}
+
+.panel-title > a:hover{
+  Color:inherit;
+  font-weight: bold;
+}
+
+
+/*Acordeon bootstrap*/
+
+.panel-default-purple {
+  border-color: #605ca8;
+}
+.panel-default-purple > .panel-heading {
+  color: #ecf0f1;
+  background-color: #605ca8;
+  border-color: #605ca8;
+}
+.panel-default-purple > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #605ca8;
+}
+.panel-default-purple > .panel-heading .badge {
+  color: #d35400;
+  background-color: #605ca8;
+  font-weight: bold;
+}
+.panel-default-purple > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #605ca8;
+}
+
+.panel-title > a{
+  Color:inherit;
+}
+
+.panel-title > a:hover{
+  Color:inherit;
+  font-weight: bold;
+}
+
+/*Acordeon bootstrap*/
+
+.panel-default-red {
+  border-color: #e74c3c;
+}
+.panel-default-red > .panel-heading {
+  color: #ecf0f1;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.panel-default-red > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #e74c3c;
+}
+.panel-default-red > .panel-heading .badge {
+  color: #d35400;
+  background-color: #e74c3c;
+  font-weight: bold;
+}
+.panel-default-red > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #e74c3c;
+}
+
+.panel-title > a{
+  Color:inherit;
+}
+
+.panel-title > a:hover{
+  Color:inherit;
+  font-weight: bold;
+}
+
+/*Acordeon bootstrap*/
+
+.panel-default-yellow {
+  border-color: #f39c12;
+}
+.panel-default-yellow > .panel-heading {
+  color: #ecf0f1;
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+.panel-default-yellow > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #f39c12;
+}
+.panel-default-yellow > .panel-heading .badge {
+  color: #d35400;
+  background-color: #f39c12;
+  font-weight: bold;
+}
+.panel-default-yellow > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #f39c12;
+}
+
+.panel-title > a{
+  Color:inherit;
+}
+
+.panel-title > a:hover{
+  Color:inherit;
+  font-weight: bold;
+}

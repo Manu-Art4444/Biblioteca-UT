@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "uclam-colbach",
+  "private_key_id": "5a5ef3be48f687c72e13a7a41330b89e09c9f862",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCSunHWvE0b4cp\nNorqFPQ8qiPfbndh6L9ABlpHbT7AFbI1M44HiFU0Mcq4zyXcFNcjD1dbWEf2X+Dn\neJG3vlsult19Yv32yoJjjZG0btQ8hD7N64CjJxygz17yyst7tw03TxTTe6biGzyr\n90o+x8vgqH4/FCkUmv2tHtL+WVZWMb9Ks9RI2LgGlRuDItKmgpGl2kZa1e6sGNDA\njBU3vfOc6RG0+VAsTtrpamxWScI2WeNzKJFlnyHBiT8GxoKWzVFbIrWHxbLZD7b5\nqBJ9Bf9KZR+6m0cpI3ExGL4BJvw2qsAOUKFluR3sG8n3i4iP6ZCOUx1muk5MALuH\ns8NVuzkjAgMBAAECggEAXhpmjFXxyZHTBxURxzqK6O8HHOqmC9fs+ZeaFkpFQEfB\n3p6vxdo0WmlbZJOAJM47PRHrH6Tshdn+Vl5BRZt/Elujv1044FVJPeqNjbS4Ou9a\nc+YCkgMZjJGjzTiHwc3xKr60uZGETLMgebH2Vd3zU0aIjwi2tPI0t6rcSrD+bhQl\ntmu8WNtBekHX/IBmBPAWwKSpH+WZdrwKpCzcgYoaoFy3/5SSm4tQKLLCb1sDaip0\n9kqzvwDL6anZ4Bhfuo0kTRaT+C5o0BhiO+abAuRV9mRcfqdph30gJc9um/ezbdcJ\nrsd0ZM4f4qiB3rVr6u+my6XJxMvbKo3rqs9Ml3EOAQKBgQDtrkfeE/X6qeiYjTPZ\nDWF9DohKVBQfbdxR1KQZgVhVNOyzjuiVGPEGVH5n0KgOy2OxXIf7y32FQGuBRbqt\nMS59qRrkTHpigatp2kja/iczeE9b1osgWaotY7UCdCfOrqvFS6kfHdhWzK3FdxDM\n795IZAtaieixPOHq5Ek/WW7rowKBgQDRRIiWHXfTuODyyZrihXthAmVwbrWasE/f\nfYhDFbA4CoiZePw+fHh2qAdVNB1lXwKns+G/3Xxqh55VbOTM33GTRSloXTJN4rKH\ngtKzWJ12bBu1xNYIl3LhWmK+zDldInxg3XQLapXx6NONTqCNhcmu4w+65970D60Y\nq1QAurdUgQKBgQCU/3hWI7VEGleRqpMiMl03BHE0B1lGCpzfP6pPwuIZKEBqn9/1\n99jA2x8S/Z8dByvL9/HXS024xxWdyJSqFfbLF8Of8sGWFyvaA9lAT6tLfNRjAi/d\na9he8+55R0/dJWrRGAlBVHhWkaEt9OI3VvfF8dGcRG/3C++kTNAOQoZieQKBgFOQ\nZGJdXg4jk2Af9UNjPgNc65jb/JTKtvptrE3tiTK3shhm4YMqPQhUzKjPaLWkHPFO\nuWTeUuJPSYCfPTY6O6YtRf2wyXekgNnv+ac4SZiSTvZkpXtEztECQNAjyPxR2wzr\nIX21kC7LZD7XGPGqbQDzFsLx+GvJHrvtHlw0MyUBAoGBAIrelWGQnYl5tGv7gJR4\nJjC7+Efyk5WH22f47dStcNdgGprnzrshTdgYDYXajjfNg60Cszk0PdcMuInm5/PB\ndl20+V1ZWkaBseBS9Ov3hClpYLJ+KW3gsGUzJfC5JbBfV0TMoUuy1ss/1xNPBKdW\nm1QOP7gicm1Ekg+24DWewbgF\n-----END PRIVATE KEY-----\n",
+  "client_email": "carga-plataforma@uclam-colbach.iam.gserviceaccount.com",
+  "client_id": "102312704082875009163",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/carga-plataforma%40uclam-colbach.iam.gserviceaccount.com"
+}
