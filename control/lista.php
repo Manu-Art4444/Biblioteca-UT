@@ -1,6 +1,5 @@
 <?php
-include'../conexion/conexion.php';
-include'../sesiones/verificar_sesion.php';
+require_once __DIR__ . '/../bootstrap.php';   // inicia sesión, carga PDO $db, etc.
 include"combos.php";
 
 
@@ -114,67 +113,61 @@ $sColorCaja = $_SESSION["s_ColorCaja"];
 </div>
 
 <script type="text/javascript">
-  $(document).ready(function() {
-    // Activar DataTables con lenguaje en español
-    var table = $('#example1').DataTable({
-      "language": {
-        "url": "../plugins/datatables/langauge/Spanish.json"
+  $(document).ready(function () {
+    const table = $('#example1').DataTable({
+      language: {
+        url: "../plugins/datatables/langauge/Spanish.json"
       }
     });
 
-    
-    $('#fModulo').change(function() {
-      var selectedModulo = $(this).val(); 
-
-      if (selectedModulo === "") {
-        table.column(5).search('').draw();
-      } else {
-        table.column(5).search(selectedModulo).draw();
-      }
+    $('#fModulo').on('change', function () {
+      const modulo = $(this).val();
+      table.column(5).search(modulo || '').draw();
     });
 
-    
-    $('#buscador').on('keyup', function() {
+    $('#buscador').on('keyup', function () {
       table.search(this.value).draw();
     });
 
-    
     $(".select2").select2();
-    
-    
-    $('input[data-toggle="toggle"]').bootstrapToggle('destroy');
-    $('input[data-toggle="toggle"]').bootstrapToggle();
 
-    $('input[data-toggle="toggle"]').change(function() {
-      var val = ($(this).prop('checked') == true) ? 1 : 0;
-      var id = $(this).attr('data-id');
+    const $toggles = $('input[data-toggle="toggle"]');
+    $toggles.bootstrapToggle('destroy').bootstrapToggle();
+
+    $toggles.on('change', function () {
+      const $this = $(this);
+      const val = $this.prop('checked') ? 1 : 0;
+      const id = $this.data('id');
 
       $.ajax({
         url: "status.php",
-        type: "POST",
+        method: "POST",
         dataType: 'html',
-        data: {id:id, val:val},
-        success: function(data) {
+        data: { id, val },
+        success: function (data) {
           alertify.dismissAll();
-          if (data.trim() == "1") {
-            alertify.success("Libro deshabilitado");
-            $("tr#tr-" + id + " td.mN").removeClass("inactivo");
-            $("tr#tr-" + id + " td.mN").addClass("activo");
-            $("tr#tr-" + id + " a.mB").removeClass("disabled");
-            $("tr#tr-" + id + " button.mB").prop("disabled", false);
-          } else if (data.trim() == "0") {
+
+          const $row = $("#tr-" + id);
+          const $td = $row.find("td.mN");
+          const $a = $row.find("a.mB");
+          const $btn = $row.find("button.mB");
+
+          if (data.trim() === "1") {
+            alertify.success("Libro activado");
+            $td.removeClass("inactivo").addClass("activo");
+            $a.removeClass("disabled");
+            $btn.prop("disabled", false);
+          } else if (data.trim() === "0") {
             alertify.error("Libro deshabilitado");
-            $("tr#tr-" + id + " td.mN").removeClass("activo");
-            $("tr#tr-" + id + " td.mN").addClass("inactivo");
-            $("tr#tr-" + id + " a.mB").addClass("disabled");
-            $("tr#tr-" + id + " button.mB").prop("disabled", true);
+            $td.removeClass("activo").addClass("inactivo");
+            $a.addClass("disabled");
+            $btn.prop("disabled", true);
           }
         },
-        error: function(xhr, status) {
+        error: function (xhr) {
           swal("Error de llamada AJAX", xhr.responseText, "error");
         }
       });
     });
   });
 </script>
-

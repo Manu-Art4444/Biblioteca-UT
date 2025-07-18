@@ -1,6 +1,5 @@
 <?php
-include'../conexion/conexion.php';
-include'../sesiones/verificar_sesion.php';
+require_once __DIR__ . '/../bootstrap.php';   // inicia sesión, carga PDO $db, etc.
 include"combos.php";
 
 

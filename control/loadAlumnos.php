@@ -1,5 +1,5 @@
 <?php 
-include'../conexion/conexion.php';
+require_once __DIR__ . '/../bootstrap.php';   // inicia sesión, carga PDO $db, etc.
 
 $alumno = $_GET["term"];
 

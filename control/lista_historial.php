@@ -1,6 +1,5 @@
 <?php
-include'../conexion/conexion.php';
-include'../sesiones/verificar_sesion.php';
+require_once __DIR__ . '/../bootstrap.php';   // inicia sesión, carga PDO $db, etc.
 include"combos.php";
 
 
@@ -58,11 +57,12 @@ $sColorCaja = $_SESSION["s_ColorCaja"];
   </style>
     </thead>
     <tbody>
+
       <?php 
       $consulta=$conexion->query("SELECT
                                   l.*, me.modulo,
                                   cl.clasificacion,
-                                  a.matricula, CONCAT(per.nombre, ' ', per.ap_materno, ' ', per.ap_materno) as alumno, p.fecha_prestamo, p.fecha_devolucion, p.observaciones as obs
+                                  a.matricula, CONCAT(per.nombre, ' ', per.ap_paterno, ' ', per.ap_materno) as alumno, p.fecha_prestamo, p.fecha_devolucion, p.observaciones as obs
                                 FROM
                                   biblioteca_libros AS l
                                   inner join modulo_estante AS me on l.id_modulo=me.id_modulo
@@ -120,7 +120,7 @@ $sColorCaja = $_SESSION["s_ColorCaja"];
 
 
     
-    $('#buscadorPrestados').on('keyup', function() {
+     $('#buscadorPrestados').on('input', function () {
       table.search(this.value).draw();
     });
 

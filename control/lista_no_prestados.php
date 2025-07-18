@@ -1,6 +1,5 @@
 <?php
-include'../conexion/conexion.php';
-include'../sesiones/verificar_sesion.php';
+require_once __DIR__ . '/../bootstrap.php';   // inicia sesión, carga PDO $db, etc.
 include"combos.php";
 
 
@@ -104,7 +103,73 @@ $sColorCaja = $_SESSION["s_ColorCaja"];
 </div>
 </div>
 
+
+
 <script type="text/javascript">
+  $(document).ready(function () {
+    // Inicializar DataTable en español
+    const table = $('#example1').DataTable({
+      language: {
+        url: "../plugins/datatables/langauge/Spanish.json"
+      }
+    });
+
+    // Filtro por módulo
+    $('#fModulo').on('change', function () {
+      const selected = $(this).val();
+      table.column(5).search(selected || '').draw();
+    });
+
+    // Buscador general
+    $('#buscador').on('keyup', function () {
+      table.search(this.value).draw();
+    });
+
+    // Inicializar select2
+    $(".select2").select2();
+
+    // Inicializar Bootstrap Toggle
+    const $toggles = $('input[data-toggle="toggle"]');
+    $toggles.bootstrapToggle('destroy').bootstrapToggle();
+
+    // Evento de cambio en el toggle
+    $toggles.on('change', function () {
+      const $this = $(this);
+      const val = $this.prop('checked') ? 1 : 0;
+      const id = $this.data('id');
+
+      $.ajax({
+        url: "status.php",
+        method: "POST",
+        data: { id, val },
+        success: function (response) {
+          alertify.dismissAll();
+          const tr = $(`#tr-${id}`);
+          const td = tr.find('td.mN');
+          const aBtn = tr.find('a.mB');
+          const btn = tr.find('button.mB');
+
+          if (response.trim() === "1") {
+            alertify.success("Perfil activado");
+            td.removeClass("inactivo").addClass("activo");
+            aBtn.removeClass("disabled");
+            btn.prop("disabled", false);
+          } else if (response.trim() === "0") {
+            alertify.error("Perfil desactivado");
+            td.removeClass("activo").addClass("inactivo");
+            aBtn.addClass("disabled");
+            btn.prop("disabled", true);
+          }
+        },
+        error: function (xhr) {
+          swal("Error de llamada AJAX", xhr.responseText, "error");
+        }
+      });
+    });
+  });
+</script>
+
+<!-- <script type="text/javascript">
   $(document).ready(function() {
     // Activar DataTables con lenguaje en español
     var table = $('#example1').DataTable({
@@ -168,4 +233,4 @@ $sColorCaja = $_SESSION["s_ColorCaja"];
     });
   });
 </script>
-
+ -->

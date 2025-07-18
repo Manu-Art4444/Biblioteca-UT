@@ -12,7 +12,7 @@
 //     return mysqli_fetch_array($res)[$field];
 // }
 
-<?php
+
 require_once __DIR__ . '/../bootstrap.php';   // inicia sesión, carga PDO $db, etc.
 
 $modulos = [];
