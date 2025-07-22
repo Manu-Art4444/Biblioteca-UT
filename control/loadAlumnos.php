@@ -17,3 +17,4 @@ while ($row = mysqli_fetch_row($combo3)) {
 	$n++;
 }
 echo json_encode($res);
+

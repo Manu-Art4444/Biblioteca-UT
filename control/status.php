@@ -1,27 +1,26 @@
 <?
-//se manda llamar la conexion
-include'../conexion/conexion.php';
+require_once __DIR__ . '/../bootstrap.php';   // inicia sesión, carga PDO $db, etc.
+session_start();
 
-//verifico inicio de sesion
-include'../sesiones/verificar_sesion.php';
+if (!isset($_POST["val"], $_POST["id"], $_SESSION["s_clave"])) {
+    exit("Acceso no autorizado.");
+}
 
-//variables post
-$activo=$_POST["val"]; 
-$gId=$_POST["id"]; 
+$activo = ($_POST["val"] == "1") ? "1" : "0";
+$gId = intval($_POST["id"]);
+$fecha = date("Y-m-d");
+$hora = date("H:i:s");
+$usuario = $_SESSION["s_clave"];
 
-//se extrae de una funcion date 
-$fecha=date("Y-m-d"); 
-$hora=date ("H:i:s");
+// Consulta segura con prepared statement
+$stmt = $conexion->prepare("UPDATE biblioteca_libros 
+                            SET activo = ?, fecha = ?, hora = ?, usuario = ?
+                            WHERE id_libro = ?");
+$stmt->bind_param("ssssi", $activo, $fecha, $hora, $usuario, $gId);
 
-/*variable de session*/
-$usuario=$_SESSION["s_clave"];
-
-$actualizar = $conexion->query("UPDATE biblioteca_libros
-							SET activo = '$activo',
-							 fecha = '$fecha',
-							 hora= '$hora',
-							 usuario = '$usuario'
-							WHERE
-							 id_libro = $gId") or die (mysqli_error());
-
-echo $activo;
+if ($stmt->execute()) {
+    echo $activo;
+} else {
+    error_log("Error al actualizar estado: " . $stmt->error);
+    echo "error";
+}
